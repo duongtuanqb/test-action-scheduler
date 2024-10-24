@@ -74,7 +74,7 @@ jobs:
             if ! git diff-index --quiet HEAD; then
               echo -e "\nPushing modified CSV file.\n"
               git commit -m "corrected UTC offset values"
-              git push "https://${GITHUB_ACTOR}:$WORKFLOW_TOKEN@github.com/${GITHUB_REPOSITORY}.git" HEAD:main || exit 0
+              git push "https://${GITHUB_ACTOR}:$WORKFLOW_TOKEN@github.com/${GITHUB_REPOSITORY}.git" HEAD || exit 0
               echo -e "\nModified file has been pushed successfully.\n"
             fi
 
