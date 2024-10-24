@@ -1,2 +1,2 @@
 ,Code,Timezone,UTC,Cron,UTC Offset,Local Time,Library
-1,sg,Asia/Singapore,20:33,30 * * * *,+08:00,04:33,Scrapy
+1,sg,Asia/Singapore,20:33,33 20 * * *,+08:00,04:33,Scrapy
